@@ -1,0 +1,54 @@
+position4{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+.sidebar{
+    position: fixed;
+    top :0%;
+    left: 0%;
+    height: 100%; 
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    overflow-y: auto; 
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+  }
+  
+  .sidebar ul li {
+    margin: 10px 0;
+  }
+  
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .sidebar ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .content {
+    margin-left: 220px; 
+    padding: 20px;
+  }
+  
+  .content h1 {
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    margin-bottom: 15px;
+  }
+  
+ 

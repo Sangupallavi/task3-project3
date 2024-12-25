@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* Styling for the pricing table */
+.pricing-table {
+  display: flex; /* Enable flexbox */
+  justify-content: space-around; /* Space out the items evenly */
+  align-items: stretch; /* Stretch the items vertically */
+  gap: 20px; /* Add some space between cards */
+  margin: 20px;
+}
+
+.price-card {
+  flex-grow: 1; /* Each card will grow proportionally */
+  flex-shrink: 1; /* Each card can shrink if necessary */
+  flex-basis: 200px; /* Base size for each card */
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; /* Smooth transition for scaling */
+}
+
+.price-card:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="pricing-table">
+        <div class="price-card">
+          <h2>Basic</h2>
+          <p>$9.99/month</p>
+        </div>
+        <div class="price-card">
+          <h2>Standard</h2>
+          <p>$19.99/month</p>
+        </div>
+        <div class="price-card">
+          <h2>Premium</h2>
+          <p>$29.99/month</p>
+        </div>
+      </div>
+      
+</body>
+</html>

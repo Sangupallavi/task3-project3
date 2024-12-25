@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a sticky header using position</title>
+    <style>
+        header{
+            position: sticky;
+            top: 0;
+            background-color: antiquewhite;
+            color: black;
+            padding: 10px;
+            text-align: center;
+            font-align:center;
+            font-size: 24px;
+            z-index: 1000;
+        }
+        .content{
+            padding: 20px;
+            height: 2000px;
+        }
+        p{
+            color: aqua;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        header tag is sticky 
+    </header>
+    <div class="content">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, eum?</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+</body>
+</html>

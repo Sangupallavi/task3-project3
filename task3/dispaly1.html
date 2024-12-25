@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+.box {
+            width: 200px;
+            height: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 100px;
+            background-color: lightblue;
+            border: 1px solid #ccc;
+        }
+        #hiddenDiv {
+            display: none;
+        }
+
+       
+        input[type="checkbox"]:checked + #hiddenDiv {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        it is visible
+    </div>
+    <div class="box" id="hiddenDiv">
+        it is hidden
+
+    </div>
+    <label>
+        <input type="checkbox">toggle visibility
+    </label>
+</body>
+</html>

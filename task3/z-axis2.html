@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Dialog Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Overlay background */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            display: none;
+        }
+
+        /* Modal box */
+        .modal {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1010;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Close button */
+        .close-btn {
+            margin-top: 15px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .close-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Show the modal when needed */
+        .modal-overlay.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Welcome to the Page</h1>
+        <p>Click the button below to see the modal dialog.</p>
+        <button onclick="showModal()">Open Modal</button>
+    </div>
+
+    <!-- Modal overlay -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <h2>Modal Dialog</h2>
+            <p>This is a modal dialog box.</p>
+            <button class="close-btn" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // Function to show the modal
+        function showModal() {
+            document.getElementById('modalOverlay').classList.add('active');
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            document.getElementById('modalOverlay').classList.remove('active');
+        }
+    </script>
+</body>
+</html>

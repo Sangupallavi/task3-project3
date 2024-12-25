@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.blog-container {
+  margin: 20px;
+}
+
+
+.blog-post {
+  width: 48%; 
+  float: left; 
+  background-color: #f9f9f9;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+}
+
+
+@supports (display: grid) {
+  .blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Dynamic columns */
+    gap: 20px; 
+  }
+
+  .blog-post {
+    float: none;
+    width: auto;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+  }
+}
+
+.blog-post h2 {
+  margin-top: 0;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="blog-container">
+        <article class="blog-post">
+          <h2>Post Title 1</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna nec metus.</p>
+        </article>
+        
+        <article class="blog-post">
+          <h2>Post Title 2</h2>
+          <p>Curabitur vehicula ligula sed urna posuere, ac pharetra nulla tempor. Nulla facilisi.</p>
+        </article>
+        
+        <article class="blog-post">
+          <h2>Post Title 3</h2>
+          <p>Morbi ut neque nec felis tincidunt cursus at nec mauris. Sed sit amet dolor at risus.</p>
+        </article>
+        
+        <article class="blog-post">
+          <h2>Post Title 4</h2>
+          <p>Phasellus malesuada, augue id ullamcorper pharetra, purus velit suscipit dui, ac pretium leo.</p>
+        </article>
+      </div>
+      
+</body>
+</html>

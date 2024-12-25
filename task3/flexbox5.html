@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Vertical Alignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-around; /* Distribute divs evenly horizontally */
+            align-items: flex-start; /* Default alignment for this container */
+            border: 2px solid #ccc;
+            height: 200px; /* Fixed height for demonstration */
+            padding: 10px;
+        }
+
+        .box {
+            width: 100px;
+            height: 50px;
+            background-color: lightblue;
+            border: 1px solid #007bff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .flex-container .center {
+            align-self: center; /* Overrides align-items for this div */
+        }
+
+        .flex-container .end {
+            align-self: flex-end; /* Overrides align-items for this div */
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="box start">Flex-Start</div>
+        <div class="box center">Center</div>
+        <div class="box end">Flex-End</div>
+    </div>
+</body>
+</html>
